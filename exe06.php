@@ -14,11 +14,11 @@
         do{
             if($n % 2 == 0) echo "<tr style='background-color:red'>";
             else echo "<tr style='background-color:blue'>";
+    
             echo "<td width=20%>&nbsp;</td>
-            <td width=20%>&nbsp;</td>
-            </tr>";
-            $n++;} while($n <= 20);
-    ?>
+                  <td width=20%>&nbsp;</td>
+                  </tr>";
+            $n++;} while($n <= 20);?>
     
 </table>
 </body>
