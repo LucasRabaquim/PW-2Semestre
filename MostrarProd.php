@@ -12,11 +12,13 @@
 </head>
 <body>
     <?php
-        $exibe = $consulta->fetch(PDO::FETCH_ASSOC);
-        echo $exibe['cd_produto'].'<br>';
-        echo $exibe['nm_produto'].'<br>';
-        echo $exibe['vl_produto'].'<br>';
-        echo $exibe['nm_categoria'].'<br>';
+        
+        while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){
+            echo $exibe['cd_produto'].'<br>';
+            echo $exibe['nm_produto'].'<br>';
+            echo $exibe['vl_produto'].'<br>';
+            echo $exibe['nm_categoria'].'<br><br>';
+        }
     ?>
 </body>
 </html>
